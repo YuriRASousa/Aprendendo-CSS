@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial CSS</title>
+    <!-- 3 - Intenal CSS -->
+    <style>
+        p{
+            /* color: gold; */
+            font-size: 50px;
+        }
+    </style>
+    <!-- 4 - External CSS -->
+    <!-- CSS = Cascading Style Sheets -->
+    <link rel="stylesheet" href="tutorial.css"> <!--É usado para colocar todas as definições de estilo em outra pasta para melhor organização/manutenção-->
+    <link rel="stylesheet" href="list.css"> <!-- 6 - Multiplos CSS-->
+</head>
+<body>
+    <!-- 1 - Inline CSS -->
+    <h1 style="color: blue;"> Mudar cor com Inline</h1> <!-- Serve para mudar a color do linha o color: X-->
+    <h1 style="color:red;"> Outro titulo</h1> <!-- Dessa vez a linha esta vermelha-->
+    <!-- 2 - Multiplas regras -->
+    <h1 style="color: aqua; font-size: 40px;">mudar cor e tamanho da fonte</h1> <!--Aqui colocamos mais de uma mudança na mesma linha-->
+    <!-- 3 - Intenal CSS -->
+    <p>Eu fui mudado pelo Internal CSS</p> <!--A mudança foi auterada na chave style dentro do head -->
+    <p>Esse ja foi alterado automatico</p>
+    <p>E esse tambem</p>
+    <!-- 4 - External CSS -->
+    <h3>Esse é no External</h3>
+    <!-- 5 - Ordem do CSS --> <!--O CSS tem uma ordem de prioridade para aceitar a regra: inline > internal=external > navegador -->
+    <p style="color: red;">Ordem em CSS</p> <!-- Como esse é um inline o CSS vai considerar esse como o principal e ignorar a linha 8 -->
+    <p>Ordem em CSS 2</p> <!--Como esse nao tem inline ele vai considerar a ultima regra criada para P entre internal e external-->
+    <!-- 6 - Multiplos CSS-->
+    <ul>
+        <li>Banana</li>
+        <li>Maça</li>
+        <li>Abacate</li>
+    </ul>
+    <!-- 8 - Classes -->
+    <p class="paragrafh">algum texto</p> <!--Pode ter mais de uma linha com a mesma class-->
+    <p class="paragrafh">algum texto2</p>
+    <p class="paragrafh">algum texto3</p>
+    <!-- 9 - Id -->
+    <h1 id="exclusive-title">Este é um titulo com id</h1> <!--Nao pode ser usado o mesmo id mais de uma vez-->
+    <!-- 10 - Multiplas regras ou ordem do CSS -->
+    <h2 id="algum-titulo">algum texto</h2>
+    <h2 class="titulo">algum texto</h2>
+    <h2>algum texto</h2>
+
+    <!-- 11 - Nome de cor  -->
+    <p class="color-name">Qualquer texto para nome de cores</p>
+    <!-- 12 - hex  -->
+    <p class="hex">paragrafo com rex</p>
+    <p class="hex2">paragrafo com hex cor 346b34</p>
+    <!-- 13 - mais sobre hex -->
+    <p class="simple-hex">hex simplificado</p>
+    <!-- 14 - RGB -->
+    <P class="RGB">Texto com RGB</P>
+    <p class="mixed-rgb">esse foi com mixed-rgb</p>
+    <!-- 15 - RGBA -->
+    <p class="rgba">aqui e com rgba</p>  <!--Muda a opacidade da cor-->
+    <!-- 16 - HSL -->
+    <p class="hsl">texto com hsl</p>
+    <p class="hsl2">texto com hsl 2</p>
+    <!-- 17 - Background-color -->
+    <p class="atras">texto com Background-color</p>
+    <!-- 18 - opacidade no background -->
+    <div class="bg-opacity">
+        <p>Estou aqui!</p>
+    </div>
+    <!-- 19 - RGBA-OPACITY  -->
+    <div class="rgba-opacity">   
+        <p>texto em rgba-opacity</p>
+    </div>
+    <!-- 20 - BG IMAGE -->
+    <h1 class="bg-img">aqui tem uma img em bg</h1>
+   <!-- 21 - Centralizando a img de bg -->
+   <div class="not-centered-bg">AO INFINITO E ALEM</div>
+   <div class="centered-bg">AO INFINITO E ALEM</div>
+    <!-- Largura e Altura  -->
+   <div class="height-width">texto para box model</div> 
+
+   <div class="height-width2">texto para box model 2</div> 
+   <!-- 23 - Padding - Uma distancia entre conteudo -->
+    <div class="without-padding">Esse nao tem padding</div>
+    <div class="padding">Esse tem padding</div>
+    <!-- 24 - Paddding Individual -->
+    <p class="padding-individual"> este elemento tem padding difernetes </p>
+    <!-- 25 - shordhand-padding -->
+    <p class="shortharnd-padding">Algum texto</p>
+    <p class="shorthand-padding2">Algum texto 2</p>
+    <!-- 26 - padding com width -->
+    <div class="without-border-box">
+        <p>alguma coisa</p>
+    </div>
+    <div class="border-box">
+        <p>alguma coisa 2</p>
+    </div>
+    <!-- 27 - Border -->
+    <div class="border">Borda</div>
+    <div class="border-2">Borda 2</div>
+    <!-- 28 - Border individual -->
+    <p class="border-left">Borda na left</p>
+    <p class="border-bottom">Borda na Bottom</p>
+    <!-- 29 - Borda arredondada -->
+    <d class="rounded-p">com borada arredondada</d>
+    <!-- 30 - Margem -->
+    <d class="margem">Eu tenho margem</d>
+    <!-- 31 - box model -->
+    <div class="box-model">
+        <p>tenho todas as propriedades do box model </p> 
+    </div>
+    <!-- DESAFIO CSS -->
+    <div id="box-model2">
+        <h2 class="texto-box">DESAFIO DO CSS</h2>
+    </div>
+
+</body>
+</html>
